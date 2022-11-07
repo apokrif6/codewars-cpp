@@ -2,4 +2,4 @@
 
 List of completed c++ codewars :)
 
-Last actualization: 07.11.2022
+Last actualization: `07.11.2022`
