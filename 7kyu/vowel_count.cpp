@@ -30,5 +30,9 @@ int getCount(const string& inputStr){
 
 int getCount(const std::string& str)
 {
-   return std::count_if(str.begin(), str.end(), [](int i){return i == 'a' || i == 'e' || i == 'i' || i == 'o'|| i == 'u';});
+   return std::count_if(
+     str.begin(), str.end(), [](int i) {
+      return i == 'a' || i == 'e' || i == 'i' || i == 'o'|| i == 'u';
+    }
+   );
 }
