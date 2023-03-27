@@ -1,6 +1,7 @@
 # codewars-cpp
 
-List of completed c++ codewars :)
+List of completed **C++** katas on **Codewars**.
 
-Last actualization: `07.11.2022`
-Last added kata: `get the middle character`
+Last actualization: `27.03.2023`
+</br>
+Last added kata: `Fun with lists: length`
