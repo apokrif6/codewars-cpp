@@ -13,6 +13,7 @@
 #include <math.h>
 
 using namespace std;
+
 int last_digit(list<int> array) {
 	long int power = 0;
 	long int currentNumber = 1;
