@@ -8,7 +8,6 @@
 
 //This kata generalizes Last digit of a large number; you may find useful to solve it beforehand.
 
-
 #include <list>
 #include <iostream>
 #include <math.h>
@@ -16,22 +15,21 @@
 using namespace std;
 int last_digit(list<int> array) {
 	long int power = 0;
-  long int currentNumber = 1;
+	long int currentNumber = 1;
 
 	while (!array.empty()) {
 		power = array.back();
 		array.pop_back();
+
+	if (currentNumber > 4) {
+		currentNumber = (currentNumber % 4) + 4;
+   	}
     
-		if (currentNumber > 4) {
-      currentNumber = (currentNumber % 4) + 4;
-    }
-    
-    if (power > 10) {
-      power = (power % 20) + 20;
-    }
+    	if (power > 10) {
+      		power = (power % 20) + 20;
+    	}
 		
-    currentNumber = pow(power, currentNumber);
-	}
-  
+    	currentNumber = pow(power, currentNumber);
+}
 	return currentNumber % 10;
 }
